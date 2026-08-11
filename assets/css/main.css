@@ -4843,3 +4843,36 @@ input, select, textarea {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* =========================================================
+   STUDENT SUPERVISION CARDS
+   ========================================================= */
+
+@media screen and (min-width: 981px) {
+
+    .supervision-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .supervision-grid .project-card {
+        min-height: 200px;
+        padding: 1.6rem;
+    }
+
+    .supervision-grid .project-card-content h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .supervision-grid .project-card-content p {
+        font-size: 0.9rem;
+        line-height: 1.55;
+    }
+
+    .supervision-grid .project-period {
+        margin-bottom: 0.8rem;
+        font-size: 0.72rem;
+    }
+}
