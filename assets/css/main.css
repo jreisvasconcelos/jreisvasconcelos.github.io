@@ -4687,3 +4687,98 @@ input, select, textarea {
 		}
 
 	}
+
+
+
+	/* =========================================================
+   JOANA VASCONCELOS - CUSTOM WEBSITE STYLING
+   ========================================================= */
+
+/* Slightly darken the otolith background */
+#wrapper > .bg {
+    filter: brightness(0.72);
+}
+
+/* Make the intro text more readable */
+#intro h1,
+#intro h2,
+#intro p {
+    color: #f5f7f7;
+    text-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.95),
+        0 0 18px rgba(0, 0, 0, 0.65);
+}
+
+/* Main logo/header */
+#header .logo {
+    color: #f5f7f7;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Softer marine turquoise for hover effects */
+#header .logo:hover,
+#nav ul.links li a:hover,
+#nav ul.icons li a:hover {
+    color: #59c3c6 !important;
+}
+
+/* Intro button */
+#intro .button:hover {
+    color: #59c3c6 !important;
+    border-color: #59c3c6 !important;
+}
+
+
+/* =========================================================
+   UPPER-RIGHT NAVIGATION
+   ========================================================= */
+
+@media screen and (min-width: 981px) {
+
+    #nav {
+        position: absolute;
+        top: 1.5rem;
+        right: 2.5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        width: auto;
+        max-width: 55rem;
+        height: auto;
+        line-height: 2.5rem;
+
+        margin: 0;
+        padding: 0.5rem 0;
+
+        background: transparent;
+        overflow: visible;
+        z-index: 20;
+    }
+
+    #nav ul.links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        flex-grow: 0;
+        max-width: 48rem;
+    }
+
+    #nav ul.links li a {
+        padding: 0 0.75rem;
+        font-size: 0.72rem;
+    }
+
+    #nav ul.links li.active {
+        background: transparent;
+    }
+
+    #nav ul.links li.active a {
+        color: #59c3c6;
+    }
+
+    #nav ul.icons {
+        margin: 0.25rem 0 0 0;
+    }
+}
