@@ -4876,3 +4876,251 @@ input, select, textarea {
         font-size: 0.72rem;
     }
 }
+
+/* =========================================================
+   STUDENT SUPERVISION - SECTION DESIGN
+   ========================================================= */
+
+.supervision-section {
+    margin: 5rem 0 6rem 0;
+    scroll-margin-top: 4rem;
+}
+
+.supervision-section-heading {
+    border-bottom: 2px solid #59c3c6;
+    padding-bottom: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.supervision-section-heading h2 {
+    margin: 0.25rem 0 0 0;
+}
+
+.section-kicker {
+    color: #59c3c6;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.supervision-subheading {
+    margin: 3.5rem 0 1.5rem 0;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid #dddddd;
+    color: #212931;
+}
+
+
+/* =========================================================
+   INDIVIDUAL STUDENT PROFILE
+   ========================================================= */
+
+.student-profile {
+    background: #ffffff;
+    border: 1px solid #e1e4e5;
+    border-left: 4px solid #59c3c6;
+    padding: 2rem;
+    margin-bottom: 1.75rem;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.student-profile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Profile with photograph */
+
+.student-profile.with-photo {
+    display: grid;
+    grid-template-columns: 145px minmax(0, 1fr);
+    gap: 2rem;
+    align-items: start;
+}
+
+
+/* Student photograph */
+
+.student-photo-wrap {
+    width: 145px;
+}
+
+.student-photo {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+
+    border: 4px solid #f4f4f4;
+}
+
+
+/* Degree/status badge */
+
+.student-badge {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    padding: 0.35rem 0.75rem;
+
+    border: 1px solid #59c3c6;
+
+    color: #59c3c6;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+/* Student name */
+
+.student-name {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.45rem;
+    text-transform: none;
+    letter-spacing: 0.02em;
+}
+
+
+/* Project title */
+
+.student-project {
+    margin: 0 0 1.5rem 0;
+
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.6;
+
+    color: #555555;
+}
+
+
+/* Metadata */
+
+.student-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1rem 2rem;
+
+    margin-top: 1.3rem;
+}
+
+.student-meta p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.student-meta strong {
+    display: block;
+
+    margin-bottom: 0.15rem;
+
+    color: #212931;
+
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   COLLAPSIBLE OUTPUTS
+   ========================================================= */
+
+.student-outputs {
+    margin-top: 1.7rem;
+    padding-top: 1rem;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+.student-outputs summary {
+    cursor: pointer;
+
+    color: #212931;
+
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.student-outputs summary:hover {
+    color: #59c3c6;
+}
+
+.outputs-list {
+    margin-top: 1.2rem;
+    padding: 1.2rem 1.4rem;
+
+    background: #f7f8f8;
+}
+
+.outputs-list p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   BACK TO INDEX
+   ========================================================= */
+
+.back-index {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.back-index a {
+    color: #59c3c6;
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    text-decoration: none;
+}
+
+.back-index a:hover {
+    color: #212931;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 736px) {
+
+    .student-profile.with-photo {
+        display: block;
+    }
+
+    .student-photo-wrap {
+        width: 110px;
+        margin-bottom: 1.5rem;
+    }
+
+    .student-photo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .student-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .student-profile {
+        padding: 1.5rem;
+    }
+
+}
