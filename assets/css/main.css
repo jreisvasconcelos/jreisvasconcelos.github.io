@@ -5863,3 +5863,87 @@ input, select, textarea {
 .pub-doi:hover {
     color: #212931;
 }
+
+
+/* =========================================================
+   ACTIVITIES PAGE
+   ========================================================= */
+
+.activities-intro {
+    margin-bottom: 3rem;
+}
+
+.activities-grid {
+    margin-top: 2rem;
+}
+
+/* Keep activity cards equal in each row */
+
+.activities-grid .news-card {
+    height: 100%;
+}
+
+.activities-grid .news-content {
+    flex: 1;
+}
+
+/* Standard visual height */
+
+.activities-grid .news-cover img {
+    width: 100%;
+    height: 285px;
+    object-fit: cover;
+}
+
+/* Local activity videos */
+
+.activities-grid .news-media {
+    height: 285px;
+    aspect-ratio: auto;
+}
+
+.activities-grid .news-media video,
+.activities-grid .news-media iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Slight separation between years */
+
+.activities-grid .news-year {
+    margin-top: 3rem;
+}
+
+
+/* =========================================================
+   ACTIVITIES - VIDEO GALLERY
+   ========================================================= */
+
+.activity-video-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.activity-video-gallery video {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: #000;
+}
+
+@media screen and (max-width: 736px) {
+
+    .activity-video-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-video-gallery video {
+        height: auto;
+    }
+
+}
