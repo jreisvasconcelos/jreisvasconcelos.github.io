@@ -6230,3 +6230,77 @@ input, select, textarea {
     }
 
 }
+
+
+/* =========================================================
+   CURRENT RESEARCH STAY
+   ========================================================= */
+
+.research-stay-card {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+
+    margin: 2rem 0 3.5rem 0;
+    padding: 2rem;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e4e5;
+    border-left: 4px solid #59c3c6;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.04);
+}
+
+.research-stay-meta {
+    display: flex;
+    align-items: center;
+}
+
+.research-stay-content h3 {
+    margin: 0.35rem 0 0.8rem 0;
+
+    color: #212931;
+
+    font-size: 1.4rem;
+    line-height: 1.3;
+
+    text-transform: none;
+}
+
+.research-stay-content p {
+    margin: 0 0 1rem 0;
+
+    color: #555;
+
+    line-height: 1.65;
+}
+
+.research-stay-link {
+    color: #59c3c6;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+    text-decoration: none;
+}
+
+.research-stay-link:hover {
+    color: #212931;
+}
+
+@media screen and (max-width: 736px) {
+
+    .research-stay-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+}
+
+.news-card[id] {
+    scroll-margin-top: 2rem;
+}
