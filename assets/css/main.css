@@ -5947,3 +5947,259 @@ input, select, textarea {
     }
 
 }
+
+/* =========================================================
+   ORIGINAL TEACHING MATERIALS
+   ========================================================= */
+
+.teaching-section {
+    margin-bottom: 5rem;
+}
+
+.teaching-intro {
+    margin-bottom: 4rem;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.teaching-section-heading {
+    margin: 4rem 0 2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #59c3c6;
+}
+
+.teaching-section-heading h2 {
+    margin: 0.25rem 0 0 0;
+}
+
+.teaching-code-heading {
+    margin-top: 5rem;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.teaching-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.teaching-card {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 330px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e4e5;
+    border-top: 4px solid #59c3c6;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.teaching-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.09);
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.teaching-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1.3rem 1.6rem 0 1.6rem;
+}
+
+.teaching-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.teaching-badge {
+    display: inline-block;
+
+    padding: 0.3rem 0.65rem;
+
+    border: 1px solid #59c3c6;
+
+    color: #59c3c6;
+
+    font-size: 0.66rem;
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.teaching-badge.secondary {
+    border-color: #c9cfd1;
+    color: #697177;
+}
+
+.teaching-year {
+    color: #999;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.teaching-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 1.4rem 1.6rem 1.6rem 1.6rem;
+}
+
+.teaching-card h3 {
+    margin: 0 0 0.9rem 0;
+
+    color: #212931;
+
+    font-size: 1.25rem;
+    line-height: 1.35;
+
+    text-transform: none;
+    letter-spacing: 0.02em;
+}
+
+.teaching-description {
+    margin: 0 0 1.2rem 0;
+
+    color: #555;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.teaching-citation {
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 0.83rem;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   FOOTER / BUTTON
+   ========================================================= */
+
+.teaching-card-footer {
+    margin-top: auto;
+    padding-top: 1.5rem;
+}
+
+.teaching-button {
+    display: inline-block;
+
+    padding: 0.65rem 0.95rem;
+
+    border: 1px solid #59c3c6;
+
+    color: #59c3c6;
+
+    font-size: 0.76rem;
+    font-weight: 800;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    text-decoration: none;
+}
+
+.teaching-button:hover {
+    background: #59c3c6;
+    color: #ffffff !important;
+}
+
+.teaching-doi {
+    display: block;
+
+    margin-top: 0.8rem;
+
+    color: #999;
+
+    font-size: 0.72rem;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   GITHUB CARDS
+   ========================================================= */
+
+.teaching-code-card {
+    min-height: 260px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width: 980px) {
+
+    .teaching-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teaching-card {
+        min-height: 0;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 736px) {
+
+    .teaching-card-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        padding: 1.2rem 1.3rem 0 1.3rem;
+    }
+
+    .teaching-card-content {
+        padding: 1.3rem;
+    }
+
+    .teaching-card h3 {
+        font-size: 1.1rem;
+    }
+
+}
