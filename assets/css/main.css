@@ -5382,9 +5382,38 @@ input, select, textarea {
    NEWS ARCHIVE - EXTRA ELEMENTS
    ========================================================= */
 
+/* =========================================================
+   NEWS CARDS - EQUAL HEIGHT
+   ========================================================= */
+
 .news-grid {
-    align-items: start;
+    align-items: stretch;
 }
+
+.news-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card .news-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Keep all cover images at exactly the same height */
+.news-card:not(.news-lead) .news-cover img {
+    width: 100%;
+    height: 285px;
+    object-fit: cover;
+}
+
+/* Galleries remain at the bottom of the card */
+.news-card .news-gallery {
+    margin-top: auto;
+}
+
 
 .news-year {
     grid-column: 1 / -1;
