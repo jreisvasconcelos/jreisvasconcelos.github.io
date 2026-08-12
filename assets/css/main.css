@@ -5453,3 +5453,194 @@ input, select, textarea {
     object-fit: cover;
 }
 
+
+
+/* =========================================================
+   LAPACOM PUBLICATIONS
+   ========================================================= */
+
+.publications-section {
+    margin-top: 4rem;
+}
+
+.publications-heading {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #59c3c6;
+}
+
+.publications-heading h2 {
+    margin: 0;
+}
+
+.publications-heading p {
+    margin: 0.6rem 0 0 0;
+    color: #666;
+}
+
+
+/* Publication card */
+
+.publication-card {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+
+    margin-bottom: 1.5rem;
+    padding: 1.6rem;
+
+    background: #ffffff;
+    border: 1px solid #e1e4e5;
+    border-left: 4px solid #59c3c6;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.publication-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Image */
+
+.publication-image {
+    display: block;
+    width: 180px;
+    height: 145px;
+    overflow: hidden;
+    border-bottom: 0;
+    background: #f5f5f5;
+}
+
+
+.publication-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* Top metadata */
+
+.publication-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.8rem;
+}
+
+
+.publication-type {
+    display: inline-block;
+
+    padding: 0.3rem 0.7rem;
+
+    border: 1px solid #59c3c6;
+    color: #59c3c6;
+
+    font-size: 0.68rem;
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+.publication-number {
+    color: #999;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+
+/* Citation */
+
+.publication-citation {
+    margin: 0 0 1rem 0;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+
+/* DOI / link */
+
+.publication-link {
+    display: inline-block;
+
+    color: #59c3c6;
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+    text-decoration: none;
+}
+
+
+.publication-link:hover {
+    color: #212931;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+
+    .publication-card {
+        grid-template-columns: 1fr;
+        gap: 1.3rem;
+    }
+
+    .publication-image {
+        width: 100%;
+        height: 220px;
+    }
+
+}
+
+/* LAPACOM FINAL THESES */
+
+.publications-section + .publications-section {
+    margin-top: 5rem;
+}
+
+/* =========================================================
+   LAPACOM PROJECT NEWS
+   ========================================================= */
+
+.project-news-grid {
+    margin-top: 2rem;
+}
+
+.project-news-grid .news-card {
+    height: 100%;
+}
+
+.project-news-grid .news-content {
+    flex: 1;
+}
+
+.project-news-grid .news-media {
+    height: 285px;
+    aspect-ratio: auto;
+}
+
+.project-news-grid .news-media iframe,
+.project-news-grid .news-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-news-grid .news-cover img {
+    height: 285px;
+    object-fit: cover;
+}
