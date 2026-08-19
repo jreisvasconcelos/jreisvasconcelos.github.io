@@ -6304,3 +6304,38 @@ input, select, textarea {
 .news-card[id] {
     scroll-margin-top: 2rem;
 }
+
+
+/* Featured news with images */
+.news-image-feature {
+    min-height: 500px;
+}
+
+.news-image-feature img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top center;
+    display: block;
+}
+
+.news-image-feature {
+    background: #fff;
+}
+
+
+.news-image-feature {
+    background: #fff;
+}
+
+.news-image-feature img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top center;
+    display: block;
+}
+
+.news-links {
+    margin-top: 1.5rem
+}
